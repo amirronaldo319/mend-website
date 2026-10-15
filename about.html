@@ -3,67 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1A1E28">
 <title>About — Mend</title>
-<meta name="description" content="Who's building Mend, and why a 22-year-old with no kids is the one doing it. The honest version — including who reviews the words and what happens if I get it wrong.">
+<meta name="description" content="Who's building Mend, and why a 22-year-old with no kids is the one doing it. The honest version, including who is meant to review the words and what happens if I get it wrong.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1E28'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23E9A94F'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Instrument+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Instrument+Sans:wght@400;500;600&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="mend.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
 <a href="#main" class="skip">Skip to content</a>
-<div id="glow"></div>
-<svg id="grain" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+<div id="glow" aria-hidden="true"><i class="glow-hot"></i><i class="glow-cool"></i></div>
 
 <div class="stage">
 
-<nav id="nav">
+<nav id="nav" aria-label="Main">
   <a class="mark" href="index.html">M<i>e</i>nd</a>
   <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
   <div class="navlinks" id="navlinks">
-    <a href="index.html#minute">The wrong minute</a>
-    <a href="index.html#twenty">The twenty</a>
-    <a href="index.html#patterns">Patterns</a>
-    <a href="index.html#price">Price</a>
-    <a class="btn" href="index.html#join">Join the waitlist <span class="arw">→</span></a>
+    <a href="index.html#how">How it works</a>
+    <a href="index.html#twenty">The twenty minutes</a>
+    <a href="index.html#trust">Trust</a>
+    <a href="index.html#faq">FAQ</a>
+    <a class="btn" href="index.html#join">Join the waitlist <span class="arw" aria-hidden="true">→</span></a>
   </div>
 </nav>
 
-<main id="main" class="wrap band">
-  <p class="stamp rv">About</p>
-  <h1 class="rv" data-d="1">Why I'm the one<br><span class="em">building this.</span></h1>
-  <p class="lede rv" data-d="2" style="margin-top:1.8rem">The fair question about a tool like this is who made it, and whether they know what they're talking about. Here's the whole answer, including the parts that don't help me.</p>
+<main id="main" class="wrap band page-head">
+  <p class="stamp" data-reveal>About</p>
+  <h1 data-reveal>Why I’m the one<br><span class="em">building this.</span></h1>
+  <p class="lede" data-reveal>The fair question about a tool like this is who made it, and whether they know what they’re talking about. Here’s the whole answer, including the parts that don’t help me.</p>
 
-  <div class="prose rv" data-d="3" style="margin-top:3rem">
-    <p>I'm Amir Keshavarzi. I'm 22, I live in North Vancouver, and I don't have children. I run a small vehicle-management business here, I'm a student, and I built Mend on evenings and weekends.</p>
+  <div class="prose" data-reveal style="margin-top:3rem">
+    <p>I’m Amir Keshavarzi. I’m 22, I live in North Vancouver, and I don’t have children. I run a small vehicle-management business here, I’m a student, and I’m building Mend on evenings and weekends. It’s still in development: there’s a website and an idea, and no app yet.</p>
 
-    <p>So the obvious objection is the right one to start with: <b>what does a 22-year-old with no kids know about losing your temper at your child at bedtime?</b> Directly, nothing. I have never stood outside a four-year-old's door at 9 PM feeling the specific shame this whole product is about. I'm not going to pretend otherwise, because pretending is exactly the thing that would make you right to distrust me.</p>
+    <p>So the obvious objection is the right one to start with: <b>what does a 22-year-old with no kids know about losing your temper at your child at bedtime?</b> Directly, nothing. I have never stood outside a four-year-old’s door at 9 PM feeling the specific shame this whole project is about. I’m not going to pretend otherwise, because pretending is exactly what would make you right to distrust me.</p>
 
-    <p>What I have is narrower and, I think, more useful than a pretend qualification. I grew up watching adults I love lose their tempers and not know how to come back from it — and I watched what the coming-back, when it happened, did. The repair mattered more than the blow-up. That's the one idea underneath everything here, and it's the one thing I'm confident about.</p>
+    <p>What I have is narrower than a qualification. I grew up watching adults I love lose their tempers and not know how to come back from it, and I watched what the coming-back did when it happened. The repair mattered more than the blow-up. That’s the one idea underneath everything here, and it’s the one thing I’m confident about.</p>
 
     <h2>Why build it anyway</h2>
-    <p>Because the thing I keep hearing, from parents who <em>do</em> have kids, is that the moment nobody helps with is the twenty minutes after. Every app aims at the shouting. Nobody built anything for 9:04 PM, when it's over and you'd do anything to make it right and you have no idea what to actually do.</p>
-    <p>I can't tell a parent how to feel in that moment. But I can build something small and specific and honest that sits there when it happens, instead of another course you'll never finish. Being 22 means I have the time to do the unglamorous version of this properly — the year of interviews and writing and no shortcuts — rather than raising money and rushing it.</p>
+    <p>The idea I keep coming back to is that the moment nobody builds for is the twenty minutes after, when it’s over and you’d do almost anything to make it right and you aren’t sure what to say. Most of what I’ve seen is aimed at the moment of anger itself. I haven’t found much made for 9:04 PM.</p>
+    <p>I can’t tell a parent how to feel in that moment. What I can try is something small, specific and honest that sits there when it happens, rather than another course you’ll never finish. I’d rather take the time to do the unglamorous version of this carefully than rush it.</p>
 
     <h2>Who checks the words</h2>
-    <p>This is the part that matters most, so I'll be exact about where it stands today.</p>
-    <p><b>A registered clinical counsellor will review every word Mend says before the app is in anyone's hands.</b> Not the marketing — the actual language a parent reads in a hard moment, and the safety logic that decides when Mend shows resources instead of a breathing exercise. I have not signed that person yet. When I have, her name goes on this page, because a credential you can't check is worth nothing.</p>
-    <p>I'm also getting the repair-language feature read by someone who works in intimate-partner violence, specifically to find how it could be misused, and a Canadian privacy lawyer is reviewing how data is handled before launch. None of that is done yet. I'd rather tell you it's coming than imply it's finished.</p>
-    <p>Until those reviews are done, Mend is not therapy, not counselling, and not a substitute for a professional. It says so on every page, and it will keep saying so even after the reviews, because it will still be true.</p>
+    <p>This is the part that matters most, so I’ll be exact about where it stands today.</p>
+    <p><b>My plan is to have a registered clinical counsellor review every word Mend says before the app is in anyone’s hands.</b> Not the marketing: the actual language a parent reads in a hard moment, and the safety logic that decides when Mend shows resources instead of a breathing prompt. I have not signed that person, and nothing has been reviewed. When there is a reviewer, their name goes on this page, because a credential you can’t check is worth nothing.</p>
+    <p>I also intend to have the repair-wording feature read by someone with expertise in intimate-partner violence, specifically to find how it could be misused, and to have a Canadian privacy lawyer review how data is handled before launch. None of that has happened yet. I’d rather tell you it’s planned than imply it’s done.</p>
+    <p>Until those reviews are done, Mend is not therapy, not counselling, and not a substitute for a professional. It says so on every page, and it will keep saying so afterwards, because it will still be true.</p>
 
-    <h2>What I'll do if I get it wrong</h2>
-    <p>A tool that touches parents, children, shame and anger can hurt people if it's careless. I take that seriously enough to say what accountability actually looks like, not just that I care.</p>
+    <h2>What I’ll do if I get it wrong</h2>
+    <p>A tool that touches parents, children, shame and anger can hurt people if it’s careless. I take that seriously enough to say what accountability looks like, not just that I care.</p>
     <ul>
-      <li>If Mend ever says something that harms rather than helps, I want to hear it. <a href="mailto:hello@mend.example">hello@mend.example</a> reaches me, one person, directly.</li>
-      <li>If what someone logs suggests a child is being hurt, Mend shows real resources rather than a reflection prompt. I would rather lose a customer than get that wrong.</li>
-      <li>If the clinical review comes back and says a feature is unsafe, that feature doesn't ship — even the ones I'm proud of. I've written that rule down for myself in advance so future-me can't argue with it.</li>
-      <li>Your logs are yours. They're never sold, never used to train anything, and you can export or delete them.</li>
+      <li>If Mend ever says something that harms rather than helps, I want to hear it. Tell me directly: <span data-contact>a contact address will be added here before launch</span>.</li>
+      <li>If what someone logs suggests a child is being hurt, Mend is meant to show real resources rather than a reflection prompt. I would rather lose a user than get that wrong.</li>
+      <li>If a clinical review says a feature is unsafe, that feature doesn’t ship, even one I’m proud of. I’m writing that rule down now so that future-me can’t argue with it.</li>
+      <li>The intention is that your logs belong to you: not sold, not used to train anything, exportable and deletable. That has to be built and reviewed before it’s a promise.</li>
     </ul>
 
-    <p>That's the honest version. If it makes you more cautious about Mend rather than less, that's a reasonable place to land — and you can watch this page to see whether the promises above turn into names and dates.</p>
+    <p>That’s the honest version. If it makes you more cautious about Mend rather than less, that’s a reasonable place to land. You can watch this page to see whether the plans above turn into names and dates.</p>
 
-    <p style="margin-top:2rem"><a class="btn btn--ghost" href="index.html#join">Join the waitlist <span class="arw">→</span></a></p>
+    <p style="margin-top:2rem"><a class="btn btn--ghost" href="index.html#join">Join the waitlist <span class="arw" aria-hidden="true">→</span></a></p>
   </div>
 </main>
 
@@ -71,17 +74,16 @@
   <div class="fgrid">
     <div>
       <a class="mark" href="index.html">M<i>e</i>nd</a>
-      <p class="small" style="margin-top:.9rem">A self-guided tool for reflection and repair. Not therapy, not counselling, not a medical device, and not a substitute for care from a licensed professional.</p>
-      <div class="fnav">
-        <a href="about.html">About</a>
+      <p class="small" style="margin-top:.9rem">A self-guided tool for reflection and repair, in development. Not therapy, not counselling, not a medical device, and not a substitute for care from a licensed professional.</p>
+      <nav class="fnav" aria-label="Footer">
+        <a href="about.html" aria-current="page">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="mailto:hello@mend.example">Contact</a>
-      </div>
+      </nav>
     </div>
     <div class="small" style="display:grid;gap:.55rem">
       <div>North Vancouver, BC</div>
-      <div>hello@mend.example</div>
+      <div data-contact>A contact address will be added before launch.</div>
     </div>
   </div>
   <div class="crisis">
@@ -90,6 +92,7 @@
 </footer>
 
 </div>
-<script src="mend.js"></script>
+<script src="config.js" defer></script>
+<script src="mend.js" defer></script>
 </body>
 </html>
